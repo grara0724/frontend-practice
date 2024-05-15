@@ -1,0 +1,105 @@
+html,
+body {
+    /* これをすることでサイドバーが下まで伸びる */
+    height: 100%;
+    margin: 0;
+}
+
+.notes {
+    /* notesSidebarとnoteAddが横並びになる */
+    display: flex;
+    height: 100%;
+}
+
+/* notesのすべてのフォントが変更 */
+.notes * {
+    font-family: sans-serif;
+}
+
+
+.notesSidebar {
+    /* 右の境界に2pxの線が引かれ、更にカラー指定 */
+    border-right: 2px solid #dddddd;
+    /* 画面を小さくしてもnoteSidevbar内の文字は改行されない */
+    flex-shrink: 0;
+    /* ロックレベル要素の内容が上下の境界からあふれた場合、どのように表示するのかを設定します。表示しないか、スクロールバーを表示するか、あふれさせるかを設定できます。 autoだとスクロールバー*/
+    overflow-y: auto;
+    padding: 1em;
+    /* サイドバーの横幅指定 */
+    width: 300px;
+}
+
+.notesAdd {
+    background: #b86a2e;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    /* カーソルを載せたときの指の形 */
+    cursor: pointer;
+    font-size: 1.25em;
+    /* フォントの太さを調子 */
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+}
+
+.notesAdd:hover {
+    background: #9c5c2c;
+}
+
+.notesList-item {
+    cursor: pointer;
+}
+
+.notesList-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notesSmall-title,
+.notesSmall-updated {
+    padding: 10px;
+}
+
+.notesSmall-title {
+    font-size: 1.2em;
+}
+
+.notesSmall-body {
+    padding: 0 10px;
+}
+
+.notesSmall-updated {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+}
+
+.notesPreview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+}
+
+.notesTitle,
+.notesBody {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.notesTitle {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.notesBody {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+}
