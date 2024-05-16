@@ -9,7 +9,7 @@ export default class NotesAPI {
   // メモを保存するAPI
   static saveNote(noteToSave) {
     const notes = NotesAPI.getAllNotes();
-    //  =>拡張for文
+    //  =>拡張for文　noteの要素を全部取り出して、noteのidとnoteToSaveのidが一致するかの判断
     const existingNote = notes.find((note) => note.id == noteToSave.id);
     // 編集or更新 更新の場合つまりIDが元からある場合はIDは変わらない
     if (existingNote) {
