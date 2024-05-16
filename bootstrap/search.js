@@ -27,7 +27,7 @@ const foodList = [
 ];
 
 const autoCompleteJS = new autoComplete({
-  placeHolder: "Search for Food...",
+  placeHolder: "教科書名",
   data: {
     src: foodList,
     cache: true,

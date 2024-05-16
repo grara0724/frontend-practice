@@ -16,18 +16,14 @@
     />
     <style>
       /* オートコンプリートのスタイルをカスタマイズしてBootstrapのスタイルを上書きしない */
-      #autoComplete_list_1 {
+      input {
         width: 100%;
         border: 1px solid #ced4da;
         border-radius: 0.25rem;
         box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-      }
-      #autoComplete_list_1 .autoComplete_result {
+
         padding: 0.375rem 0.75rem;
         cursor: pointer;
-      }
-      #autoComplete_list_1 .autoComplete_result:hover,
-      #autoComplete_list_1 .autoComplete_result:focus {
         background-color: #e9ecef;
       }
     </style>
@@ -86,6 +82,8 @@
                 placeholder="Search"
                 aria-label="Search"
                 id="autoComplete"
+                style="border-color: #0d6efd"
+                background-image:url="(C:\Users\grara\Desktop\FrontEndPractice\frontend-practice\bootstrap\search.png);"
               />
               <button class="btn btn-outline-success" type="submit">
                 Search
