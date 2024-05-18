@@ -20,5 +20,12 @@ export default class NotesView {
     <input type="text" class="notesTitle" placeholder="タイトルを記入">
     <textarea class="notesBody" placeholder="ここに本文を追加"></textarea>
 </div>`;
+
+    const btnAddNote = this.root.querySelector(".notesAdd");
+
+    btnAddNote.addEventListener("click", () => {
+      this.onNoteAdd();
+
+    });
   }
 }
