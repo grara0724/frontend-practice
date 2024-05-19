@@ -1,0 +1,40 @@
+body{
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sidebar{
+ position: relative;
+ left: -250px;
+  background-color: rgba(8, 8, 8, 0.85);
+  color: white;
+  transition: all 0.35s ease;
+}
+
+.sidebar:hover{
+transform: translateX(250px);
+
+}
+
+
+a{
+  margin-top: 30px;
+  text-decoration: none;
+  color: white;
+}
+
+.hover-effect{
+  margin-top: 25px;
+border-radius: 15px;
+padding-left: 10px;
+  background-color: #8f0b0b;
+    transition: all 0.35s ease;
+}
+
+.hover-effect:hover {
+  background-color: aliceblue;
+  color: black;
+}
+
